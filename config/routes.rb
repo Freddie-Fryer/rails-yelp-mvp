@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   # get '/restaurants/:id', to: 'restaurants#show'
 
-  resources :restaurants, only: [ :new, :create, :index, :show ] do
+  resources :restaurants, only: [ :new, :create, :index, :show  ] do
     resources :reviews, only: [ :new, :create ]
   end
 end

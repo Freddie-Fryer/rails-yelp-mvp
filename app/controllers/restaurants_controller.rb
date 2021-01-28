@@ -1,7 +1,7 @@
 class RestaurantsController < ApplicationController
-  before_action :find_task, only: [:show, :edit, :update, :destroy]
+  before_action :find_restaurant, only: [:show, :edit, :update,]
 
-  def index # all tasks
+  def index
     @restaurants = Restaurant.all
   end
 
@@ -17,7 +17,7 @@ class RestaurantsController < ApplicationController
 
   def show; end
 
-  
+
 
   private
 
